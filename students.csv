@@ -1,0 +1,6 @@
+student_id,name,gender,age,math,science,english,attendance,result
+1,Rahul,Male,18,85,90,88,95,Pass
+2,Priya,Female,19,78,82,80,92,Pass
+3,Arjun,Male,18,55,60,58,75,Pass
+4,Sneha,Female,20,45,50,48,65,Fail
+5,Kiran,Male,19,92,95,90,98,Pass
