@@ -35,7 +35,7 @@ conn = mysql.connector.connect(
     host="localhost",
     user="root",
     password="MyNewPassword123!",   # Your real password
-    database="edupro"
+    database="Eduvista"
 )
 
 # -----------------------------
@@ -622,7 +622,7 @@ csv = filtered_transactions.to_csv(index=False).encode("utf-8")
 st.download_button(
     label="📥 Download Transactions CSV",
     data=csv,
-    file_name="edupro_filtered_transactions.csv",
+    file_name="Eduvista_filtered_transactions.csv",
     mime="text/csv"
 )
 # -----------------------------
@@ -634,7 +634,7 @@ st.markdown(
     """
     ### 📌 Project Information
 
-    **Project:** Learner Demographics and Course Enrollment Behavior Analysis on EduPro
+    **Project:** Learner Demographics and Course Enrollment Behavior Analysis on Eduvista
 
     **Tools Used:**
     - MySQL
@@ -652,7 +652,7 @@ st.markdown("---")
 st.markdown(
     """
     <div style='text-align:center; color:gray; font-size:15px;'>
-        <b>EduPro Learner Demographics and Course Enrollment Behavior Analysis</b><br>
+        <b>Eduvista Learner Demographics and Course Enrollment Behavior Analysis</b><br>
         Developed using <b>Python • Streamlit • MySQL • Plotly</b><br>
         © 2026
     </div>
