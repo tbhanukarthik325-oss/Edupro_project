@@ -1,8 +1,8 @@
-# 📚 EduPro Analytics Dashboard
+# 📚 Eduvista Analytics Dashboard
 
 ## 📌 Project Overview
 
-The EduPro Analytics Dashboard is a data analytics project developed to analyze learner demographics and course enrollment behavior using SQL, Python, and Streamlit. The dashboard provides interactive visualizations and key insights that help understand learner engagement, course popularity, teacher performance, and revenue trends.
+The Eduvista Analytics Dashboard is a data analytics project developed to analyze learner demographics and course enrollment behavior using SQL, Python, and Streamlit. The dashboard provides interactive visualizations and key insights that help understand learner engagement, course popularity, teacher performance, and revenue trends.
 
 ---
 
@@ -37,15 +37,12 @@ The EduPro Analytics Dashboard is a data analytics project developed to analyze 
 ## 📂 Project Structure
 
 ```
-EduPro_project/
+Eduvista-project/
 │
 ├── app.py
-├── streamlit_app.py
-├── EduPro_EDA.ipynb
 ├── requirements.txt
 ├── runtime.txt
 ├── README.md
-└── students.csv
 ```
 
 ---
@@ -70,7 +67,7 @@ The dashboard includes:
 ### Clone Repository
 
 ```bash
-git clone https://github.com/tbhanukarthik325-oss/Edupro_project.git
+git clone https://github.com/tbhanukarthik325-oss/EduVista-Analytics.git
 ```
 
 ### Install Dependencies

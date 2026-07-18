@@ -7,7 +7,7 @@ import plotly.express as px
 # Page Configuration
 # -----------------------------
 st.set_page_config(
-    page_title="EduPro Analytics Dashboard",
+    page_title="Eduvista Analytics Dashboard",
     page_icon="📚",
     layout="wide"
 )
@@ -15,12 +15,12 @@ st.set_page_config(
 # -----------------------------
 # Dashboard Title
 # -----------------------------
-st.title("📚 EduPro Analytics Dashboard")
+st.title("📚 Eduvista Analytics Dashboard")
 
 st.markdown("""
 ### Learner Demographics and Course Enrollment Behavior Analysis
 
-Welcome to the **EduPro Analytics Dashboard**. This interactive dashboard provides
+Welcome to the **Eduvista Analytics Dashboard**. This interactive dashboard provides
 insights into learner demographics, course enrollments, revenue generation,
 teacher expertise, and payment behavior. Users can apply filters to explore
 different learner segments and understand enrollment trends.
@@ -34,8 +34,8 @@ st.markdown("---")
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="MyNewPassword123!",
-    database="edupro"      # Change this if your database name is different
+    password="MyNewPassword123!",   # Your real password
+    database="edupro"
 )
 
 # -----------------------------
