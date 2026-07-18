@@ -29,22 +29,17 @@ different learner segments and understand enrollment trends.
 st.markdown("---")
 
 # -----------------------------
-# Connect to MySQL
+# Load Data from CSV
 # -----------------------------
-conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="MyNewPassword123!",   # Your real password
-    database="Eduvista"
-)
+users = pd.read_csv("data/users.csv", sep=";")
+courses = pd.read_csv("data/courses.csv", sep=";")
+teachers = pd.read_csv("data/teachers.csv", sep=";")
+transactions = pd.read_csv("data/transactions.csv", sep=";")
 
-# -----------------------------
-# Load Data
-# -----------------------------
-users = pd.read_sql("SELECT * FROM users", conn)
-courses = pd.read_sql("SELECT * FROM courses", conn)
-teachers = pd.read_sql("SELECT * FROM teachers", conn)
-transactions = pd.read_sql("SELECT * FROM transactions", conn)
+print(users.columns)
+print(courses.columns)
+print(teachers.columns)
+print(transactions.columns)
 # -----------------------------
 # Convert Transaction Date
 # -----------------------------
@@ -661,7 +656,3 @@ st.markdown(
 )
 
 
-# -----------------------------
-# Close Database Connection
-# -----------------------------
-conn.close()
